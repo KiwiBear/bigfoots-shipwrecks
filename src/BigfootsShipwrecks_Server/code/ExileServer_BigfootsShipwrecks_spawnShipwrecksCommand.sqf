@@ -1,21 +1,8 @@
 if (!isServer) exitWith {};
-
-private["_crate", "_crateCargo", "_crateClass", "_crateCountPoptabsSeed", "_cratePosition", "_isDebugFillLogEnabled", "_marker", "_minDistance", "_maxDistance", "_positioning", "_spawnCenter", "_wreckage", "_wreckageClass", "_wreckCount", "_wreckId", "_wreckagePosition"];
-
 "Starting shipwreck spawns..." call ExileServer_BigfootsShipwrecks_util_logCommand;
 
-_wreckCount = _this select 0;;
-
-_positioning = _this select 1;
-_spawnCenter = _positioning select 0;
-_minDistance = _positioning select 1;
-_maxDistance = _positioning select 2;
-
-_wreckageClass = _this select 2;
-_crateClass = _this select 3;
-_crateCargo = _this select 4;
-_crateCountPoptabsSeed = _this select 5;
-_isDebugFillLogEnabled = _this select 6;
+params [["_wreckCount",0],["_positioning",[]],["_wreckageClass",""],["_crateClass",""],["_crateCargo",[]],["_crateCountPoptabsSeed",0],["_isDebugFillLogEnabled",false],"_crate","_wreckage","_wreckId","_wreckagePosition"];
+_positioning params[["_spawnCenter",[]],["_minDistance",0],["_maxDistance",[]]];
 
 for "_i" from 1 to _wreckCount do
 {   
@@ -25,7 +12,7 @@ for "_i" from 1 to _wreckCount do
     format["Found position at [%1] for wreck.", _wreckagePosition] call ExileServer_BigfootsShipwrecks_util_logCommand;
 
     // Create ID for this wreck
-    _wreckId = _i call ExileServer_BigfootsShipwrecks_getWreckIdForSpawnCountIndexQuery;
+    _wreckId = format ["BigfootsShipwrecks_wreck_%1", _i];
 
     // Create a marker
     [_wreckId, _wreckagePosition, "Shipwrecked loot crate"] call ExileServer_BigfootsShipwrecks_createShipwreckMarkerCommand;

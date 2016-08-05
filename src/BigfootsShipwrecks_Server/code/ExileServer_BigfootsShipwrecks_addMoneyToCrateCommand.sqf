@@ -5,12 +5,7 @@
  
 if (!isServer) exitWith {};
 
-private ["_countPoptabs", "_crate", "_enableCrateFillDebug", "_randomDistributionSeed", "_wreckId"];
-
-_wreckId = _this select 0;
-_crate = _this select 1;
-_randomDistributionSeed = _this select 2;
-_enableCrateFillDebug = _this select 3;
+params [["_wreckId",0],["_create",objNull],["_randomDistributionSeed",0],["_enableCrateFillDebug",false],"_countPoptabs"];
 
 _countPoptabs = floor(random _randomDistributionSeed);
 _crate setVariable ["ExileMoney", _countPoptabs, true];

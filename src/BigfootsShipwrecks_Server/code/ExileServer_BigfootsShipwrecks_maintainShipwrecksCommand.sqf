@@ -1,14 +1,8 @@
 if (!isServer) exitWith {};
-
-private["_coords", "_countWrecks", "_crateClaimMessageRadius", "_i", "_isPlayerInRange", "_markerId", "_markerPosition", "_message", "_showCrateClaimMessage"];
-
-_countWrecks = _this select 0;
-_crateClaimMessageRadius = _this select 1;
-_showCrateClaimMessage = _this select 2;
-
+params[["_countWrecks",0],["_crateClaimMessageRadius",0],["_showCrateClaimMessage",false],"_markerId","_coords","_message","_markerPosition"]
 for "_i" from 1 to _countWrecks do
 {
-	_markerId = _i call ExileServer_BigfootsShipwrecks_getWreckIdForSpawnCountIndexQuery;
+	_markerId = format ["BigfootsShipwrecks_wreck_%1", _i];
 	_markerPosition = getMarkerPos _markerId;
 
 	if(!isNil "_markerPosition") then 

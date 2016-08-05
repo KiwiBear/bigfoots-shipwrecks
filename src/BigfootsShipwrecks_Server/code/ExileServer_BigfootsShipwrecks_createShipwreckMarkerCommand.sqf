@@ -3,11 +3,7 @@
  * file 'LICENSE.txt', which is part of this source code package.
  */
  
-private ["_marker", "_markerId", "_markerPosition", "_markerText"];
-
-_markerId = _this select 0;
-_markerPosition = _this select 1;
-_markerText = _this select 2;
+params [["_markerId",0],["_markerPosition",[]],["_markerText",""],"_marker"];
 
 _marker = createMarker [_markerId, _markerPosition];
 _marker setMarkerShape "ICON";
