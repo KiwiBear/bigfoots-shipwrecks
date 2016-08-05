@@ -1,5 +1,5 @@
 if (!isServer) exitWith {};
-params[["_countWrecks",0],["_crateClaimMessageRadius",0],["_showCrateClaimMessage",false],"_markerId","_coords","_message","_markerPosition"]
+params[["_countWrecks",0],["_crateClaimMessageRadius",0],["_showCrateClaimMessage",false],"_markerId","_coords","_message","_markerPosition"];
 for "_i" from 1 to _countWrecks do
 {
 	_markerId = format ["BigfootsShipwrecks_wreck_%1", _i];
