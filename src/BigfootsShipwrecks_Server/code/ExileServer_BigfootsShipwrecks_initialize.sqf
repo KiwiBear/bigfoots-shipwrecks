@@ -21,20 +21,6 @@ BS_loot_enablePoptabs = ((getNumber(_config >> "BS_loot_enablePoptabs")) isEqual
 BS_loot_count_poptabs_seed = getArray(_config >> "BS_loot_count_poptabs_seed")
 BS_loot_itemCargo = getArray(_config >> "BS_loot_itemCargo");
 
-publicVariable "BS_debug_logCrateFill";
-publicVariable "BS_player_showCrateClaimMessage";
-publicVariable "BS_player_showCrateClaimMessageRadius";
-publicVariable "BS_class_crate";
-publicVariable "BS_class_wreckage";
-publicVariable "BS_count_shipwrecks";
-publicVariable "BS_locations_crateWreckOffset";
-publicVariable "BS_locations_center";
-publicVariable "BS_locations_distance_min";
-publicVariable "BS_locations_distance_max";
-publicVariable "BS_loot_enablePoptabs";
-publicVariable "BS_loot_count_poptabs_seed";
-publicVariable "BS_loot_itemCargo";
-
 // Spawns shipwrecks with loot crates at server start
 [
     BS_count_shipwrecks, // Wreck count
