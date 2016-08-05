@@ -6,7 +6,7 @@
 if (!isServer) exitWith {};
 
 "Starting initialization..." call ExileServer_BigfootsShipwrecks_util_logCommand;
-
+_config = configFile >> "BigfootsShipwrecks_Config";
 BS_debug_logCrateFill = ((getNumber(_config >> "BS_debug_logCrateFill")) isEqualTo 1);
 BS_player_showCrateClaimMessage = ((getNumber(_config >> "BS_player_showCrateClaimMessage")) isEqualTo 1);
 BS_player_showCrateClaimMessageRadius = getNumber(_config >> "BS_player_showCrateClaimMessageRadius");
