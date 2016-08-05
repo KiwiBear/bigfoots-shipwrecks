@@ -6,7 +6,4 @@
 params [["_markerId",0],["_markerPosition",[]],["_markerText",""],"_marker"];
 
 _marker = createMarker [_markerId, _markerPosition];
-_marker setMarkerShape "ICON";
-_marker setMarkerType "mil_box";
-_marker setMarkerColor "ColorGreen";
-_marker setMarkerText _markerText;
+_marker setMarkerType "ExileBoatTraderIcon";
