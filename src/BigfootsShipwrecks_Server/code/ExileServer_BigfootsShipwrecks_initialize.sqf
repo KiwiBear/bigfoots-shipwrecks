@@ -16,7 +16,7 @@ BS_locations_center = getArray(_config >> "BS_locations_center");
 BS_locations_distance_min = getNumber(_config >> "BS_locations_distance_min");
 BS_locations_distance_max = getNumber(_config >> "BS_locations_distance_max");
 BS_loot_enablePoptabs = ((getNumber(_config >> "BS_loot_enablePoptabs")) isEqualTo 1);
-BS_loot_count_poptabs_seed = getArray(_config >> "BS_loot_count_poptabs_seed")
+BS_loot_count_poptabs_seed = getArray(_config >> "BS_loot_count_poptabs_seed");
 BS_loot_itemCargo = getArray(_config >> "BS_loot_itemCargo");
 
 // Spawns shipwrecks with loot crates at server start
