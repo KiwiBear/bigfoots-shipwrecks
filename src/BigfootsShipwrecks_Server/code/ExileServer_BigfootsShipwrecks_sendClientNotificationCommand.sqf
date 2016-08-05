@@ -1,5 +1,3 @@
-if (!isServer) exitWith {};
-
 params [["_type",""],["_title",""],["_message",""],"_toastType"];
 _toastType = format ["%1TitleAndText", _type];
 

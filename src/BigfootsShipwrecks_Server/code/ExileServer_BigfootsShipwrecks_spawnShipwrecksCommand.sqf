@@ -1,4 +1,3 @@
-if (!isServer) exitWith {};
 "Starting shipwreck spawns..." call ExileServer_BigfootsShipwrecks_util_logCommand;
 
 params [["_wreckCount",0],["_positioning",[]],["_wreckageClass",""],["_crateClass",""],["_crateCargo",[]],["_crateCountPoptabsSeed",0],["_isDebugFillLogEnabled",false],"_crate","_wreckage","_wreckId","_wreckagePosition"];

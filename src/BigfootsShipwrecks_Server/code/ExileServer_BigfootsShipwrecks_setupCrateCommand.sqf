@@ -1,6 +1,4 @@
-private ["_crate"];
-
-_crate = _this;
+private _crate = _this;
 
 // Initialize crate
 clearMagazineCargoGlobal _crate;

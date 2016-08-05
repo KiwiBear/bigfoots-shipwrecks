@@ -2,8 +2,6 @@
  * This file is subject to the terms and conditions defined in
  * file 'LICENSE.txt', which is part of this source code package.
  */
- 
-if (!isServer) exitWith {};
 
 params[["_wreckId",0],["_crate",objNull],["_cargoItems",[]],["_enableCrateFillDebug",false],"_actualCount", "_actualAdditionalCount","_cargoItems","_chance","_class","_count","_minCount","_possibleAdditionalCount"];
 

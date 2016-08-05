@@ -2,8 +2,6 @@
  * This file is subject to the terms and conditions defined in
  * file 'LICENSE.txt', which is part of this source code package.
  */
- 
-if (!isServer) exitWith {};
 
 params [["_wreckId",0],["_create",objNull],["_randomDistributionSeed",0],["_enableCrateFillDebug",false],"_countPoptabs"];
 
