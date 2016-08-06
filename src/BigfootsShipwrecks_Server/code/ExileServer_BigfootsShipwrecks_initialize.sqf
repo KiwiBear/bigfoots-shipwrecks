@@ -47,6 +47,4 @@ BS_loot_itemCargo = getArray(_config >> "BS_loot_itemCargo");
 
 "Finished initialization." call ExileServer_BigfootsShipwrecks_util_logCommand;
 
-["systemChatRequest", ["Bigfoot's Shipwrecks Initialized"]] call ExileServer_system_network_send_broadcast;
-
 true
