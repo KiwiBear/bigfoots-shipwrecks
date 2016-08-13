@@ -1,8 +1,10 @@
 class CfgPatches
 {
-	class BigfootsShipwrecks_Server {
+	class BigfootsShipwrecks_Server 
+	{
 		requiredVersion = 0.1;
-		requiredAddons[] = {
+		requiredAddons[] = 
+		{
             "exile_server"
         };
 		units[] = {};
